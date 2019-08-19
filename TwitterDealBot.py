@@ -2,19 +2,19 @@ import praw
 import tweepy
 import time
 
-CONSUMER_KEY = 'yceCLAwesrXkWtF3PYy2LYoi2'
-CONSUMER_SECRET = 'iQG8Uaf225BHhbORlm7yVkA6i8slO4ntF3QRm9sMHrmmC9AQ18'
-ACCESS_KEY = '1162117668519972865-PlDv6p7ixEUQxHPQpkayr8Qx39rjvI'
-ACCESS_SECRET = '4now7yrabExbhBaXr1C9SKApEtJ8vDqOfjgZBYqohbesN'
+CONSUMER_KEY = '<CONSUMER_KEY>'
+CONSUMER_SECRET = '<CONSUMER_SECRET>'
+ACCESS_KEY = '<ACCESS_KEY>'
+ACCESS_SECRET = 'ACCESS_SECRET'
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
-reddit = praw.Reddit(client_id = 'LvTyUgoJJf9V7g',
-                     client_secret = '4SARkrVeBTbGQ1JMgUat-KIfnlI',
-                     username = 'TwitterDealBot',
-                     password = 'redditBot1212#',
+reddit = praw.Reddit(client_id = '<CLIENT_ID',
+                     client_secret = '<CLIENT_SECRET>',
+                     username = '<ACC_USERNAME>',
+                     password = '<ACC_PASSWORD>',
                      user_agent = 'TwitterDealBot v1.0 by /u/TwitterDealBot')
 
 subreddit = reddit.subreddit('deals')
